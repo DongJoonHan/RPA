@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CPUZ_Test_Share" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="863,2895" sap2010:WorkflowViewState.IdRef="CPUZ_Test_Share_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CPUZ_Test_Share" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="751,1558" sap2010:WorkflowViewState.IdRef="CPUZ_Test_Share_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -51,14 +51,14 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CPUZ_Test_Share" sap:VirtualizedContainerService.HintSize="873,2730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CPUZ_Test_Share" sap:VirtualizedContainerService.HintSize="636,1393" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AppendLine DisplayName="Append Line" Encoding="UTF-8" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="831,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Start CPU-Z Test: &quot; + Now.ToShortDateString+Now.ToShortTimeString]" />
-    <Sequence DisplayName="데스크톱" sap:VirtualizedContainerService.HintSize="831,2466" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <ui:AppendLine DisplayName="Append Line" Encoding="UTF-8" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="594,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Start CPU-Z Test: &quot; + Now.ToShortDateString+Now.ToShortTimeString]" />
+    <Sequence DisplayName="데스크톱" sap:VirtualizedContainerService.HintSize="594,1129" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:GenericValue" Name="cores" />
         <Variable x:TypeArguments="ui:GenericValue" Name="ram" />
@@ -68,132 +68,57 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="'cpuz_x32.exe  CPU-Z' 열기" FileName="C:\cpu-z_1.92-en\cpuz_x32.exe" sap:VirtualizedContainerService.HintSize="789,2374" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="39a7e03bfded99948c37d33a6aa5aa4b" Selector="&lt;wnd app='cpuz_x32.exe' cls='#32770' title='CPU-Z ' /&gt;">
+      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="'cpuz_x32.exe  CPU-Z' 열기" FileName="C:\cpu-z_1.92-en\cpuz_x32.exe" sap:VirtualizedContainerService.HintSize="510,970" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="39a7e03bfded99948c37d33a6aa5aa4b" Selector="&lt;wnd app='cpuz_x32.exe' cls='#32770' title='CPU-Z ' /&gt;">
         <ui:OpenApplication.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755,2228" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence sap:VirtualizedContainerService.HintSize="476,824" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="713,132" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="Start TC001" />
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  CPU'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                <ui:Click.CursorPosition>
-                  <ui:CursorPosition OffsetX="29" OffsetY="8" Position="TopLeft" />
-                </ui:Click.CursorPosition>
-                <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36081039-dc72-4a70-ab1f-3f8df7e0d685" InformativeScreenshot="f660232475d01dc1d4617898a35c8226" Selector="&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='CPU' role='page tab' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:Click.Target>
-              </ui:Click>
-              <ui:GetFullText DisplayName="Get Full Text 'Static'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="GetFullText_1" IgnoreHidden="False">
-                <ui:GetFullText.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="701f2b73-e4a0-4402-ac4c-9fff9dd137a5" InformativeScreenshot="783f183b6d570e062b46f4b581182606" Selector="&lt;wnd ctrlid='1120' title='4' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:GetFullText.Target>
-                <ui:GetFullText.Text>
-                  <OutArgument x:TypeArguments="ui:GenericValue">[cores]</OutArgument>
-                </ui:GetFullText.Text>
-              </ui:GetFullText>
-              <If Condition="[Decimal.Parse(cores) &gt;= 2]" sap:VirtualizedContainerService.HintSize="713,279" sap2010:WorkflowViewState.IdRef="If_1">
-                <If.Then>
-                  <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="PASS" />
-                </If.Then>
-                <If.Else>
-                  <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="Failure" />
-                </If.Else>
-              </If>
-              <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="713,132" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="Start TC002" />
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  Memory'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                <ui:Click.CursorPosition>
-                  <ui:CursorPosition OffsetX="30" OffsetY="8" Position="TopLeft" />
-                </ui:Click.CursorPosition>
-                <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="812ef30b-f7d2-439e-b188-9a6e5c28b0c7" InformativeScreenshot="596dded7240842a81e43b1870818d556" Selector="&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='Memory' role='page tab' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:Click.Target>
-              </ui:Click>
-              <ui:GetFullText DisplayName="Get Full Text 'Static'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="GetFullText_2" IgnoreHidden="False">
-                <ui:GetFullText.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0fbf03ed-1be9-41fb-8817-b3dc2457cef4" InformativeScreenshot="df6bcfc1dc78846d63fce9627f543770" Selector="&lt;wnd ctrlid='1061' title='16 GBytes' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:GetFullText.Target>
-                <ui:GetFullText.Text>
-                  <OutArgument x:TypeArguments="ui:GenericValue">[ram]</OutArgument>
-                </ui:GetFullText.Text>
-              </ui:GetFullText>
-              <If Condition="[Decimal.Parse(ram.Replace(&quot; GBytes&quot;, &quot;&quot;)) &gt;= 8]" sap:VirtualizedContainerService.HintSize="713,279" sap2010:WorkflowViewState.IdRef="If_2">
-                <If.Then>
-                  <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="PASS" />
-                </If.Then>
-                <If.Else>
-                  <ui:AppendLine DisplayName="Append Line" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="Failure" />
-                </If.Else>
-              </If>
-              <ui:AppendLine DisplayName="Append Line" Encoding="UTF-8" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="713,132" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;End CPU-Z Test: &quot; + Now.ToShortDateString+Now.ToShortTimeString]" />
-              <Sequence DisplayName="데스크톱" sap:VirtualizedContainerService.HintSize="713,398" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'CPU Z Dialog'" sap:VirtualizedContainerService.HintSize="434,306" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='cpuz_x32.exe' cls='#32770' title='CPU-Z ' /&gt;">
-                  <ui:WindowScope.Body>
-                    <ActivityAction x:TypeArguments="x:Object">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:CloseApplication DisplayName="Close Application 'cpuz_x32.exe  CPU-Z'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-                          <ui:CloseApplication.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b19072d3-477d-4a13-a16d-2d42bd4877e3" InformativeScreenshot="38209aaea2e5dca4a7dd1d72cd664784">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:CloseApplication.Target>
-                        </ui:CloseApplication>
-                      </Sequence>
-                    </ActivityAction>
-                  </ui:WindowScope.Body>
-                </ui:WindowScope>
-              </Sequence>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TC001 workflow" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="App_실습1\TestCases\TC001.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TC002 workflow" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="App_실습1\TestCases\TC002.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:AppendLine DisplayName="Append Line" Encoding="UTF-8" FileName="[&quot;result_&quot;+Now.ToString(&quot;yyyy_MM_dd&quot;)]" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;End CPU-Z Test: &quot; + Now.ToShortDateString+Now.ToShortTimeString]" />
+              <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'CPU Z Dialog'" sap:VirtualizedContainerService.HintSize="434,306" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='cpuz_x32.exe' cls='#32770' title='CPU-Z ' /&gt;">
+                <ui:WindowScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CloseApplication DisplayName="Close Application 'cpuz_x32.exe  CPU-Z'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+                        <ui:CloseApplication.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b19072d3-477d-4a13-a16d-2d42bd4877e3" InformativeScreenshot="38209aaea2e5dca4a7dd1d72cd664784">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:CloseApplication.Target>
+                      </ui:CloseApplication>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:WindowScope.Body>
+              </ui:WindowScope>
             </Sequence>
           </ActivityAction>
         </ui:OpenApplication.Body>
